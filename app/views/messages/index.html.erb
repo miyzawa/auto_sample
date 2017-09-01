@@ -12,7 +12,8 @@
 
   <tbody>
     <% @messages.each do |message| %>
-      <tr>
+
+      <tr class="messages" data-id= <%= messages.id %> ></tr>
         <td><%= message.text %></td>
         <td><%= link_to 'Show', message %></td>
         <td><%= link_to 'Edit', edit_message_path(message) %></td>
