@@ -13,7 +13,7 @@
   <tbody>
     <% @messages.each do |message| %>
 
-      <tr class="messages" data-id= <%= messages.id %> ></tr>
+      <tr class="messages" data-id= <%= message.id %> ></tr>
         <td><%= message.text %></td>
         <td><%= link_to 'Show', message %></td>
         <td><%= link_to 'Edit', edit_message_path(message) %></td>
